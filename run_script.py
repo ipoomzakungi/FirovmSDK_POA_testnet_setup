@@ -14,7 +14,7 @@ def execute_command(command):
         print(e)
 
 # Run the initial command
-# execute_command('node ./initcontract.js')
+execute_command('node ./initcontract.js')
 
 # Array list of addresses
 addresses = os.environ['MINER_ADDRESS'].split(',')
