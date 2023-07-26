@@ -1,0 +1,12 @@
+{
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethereumjs-wallet": "^1.0.2",
+    "ethers": "^6.6.5",
+    "firovm-sdk": "^0.0.24-alpha"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
