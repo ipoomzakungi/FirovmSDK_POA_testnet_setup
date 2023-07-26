@@ -63,8 +63,8 @@ MINER_ADDRESS=addr1,addr2,addr3,...
 - `RPC_PORT` is your `rpcport` in `firovm.conf`.  
 **note** this port must expose in the `Dockerfile` , port mapping in Dockercompse.yml too
 
-- `ADMIN1_PRIVKEY` is your Admin1 Private key that got from [##CreateAdminAddress](#markdown-header-create-admin-address).
-- `ADMIN2_PRIVKEY` is your Admin2 Private key that got from [##CreateAdminAddress].
+- `ADMIN1_PRIVKEY` is your Admin1 Private key that got from [##CreateAdminAddress](#create-admin-address).
+- `ADMIN2_PRIVKEY` is your Admin2 Private key that got from [##CreateAdminAddress](#create-admin-address).
 - `MINER_ADDRESS` is your miner address that got from generating address in miner node.
 
 ## Usage
