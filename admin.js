@@ -16,20 +16,15 @@ const client = new Client({
 });
 
 // Generate Mnemonic for Admin1
+console.log(`Admin1:`); // backup this
 const admin1 = new MnemonicAccount(context);
 const str1 = JSON.stringify(admin1, null, 4); // (Optional) beautiful indented output.
 console.log(str1); // Logs output to dev tools console.
 
-console.log(`Admin1 Mnemonic: ${admin1.mnemonic}`); // backup this
-console.log(`Admin1 Native Address: ${admin1.address()}`); // Native address
-console.log(`Admin1 Hex Address: ${admin1.hex_address()}`); // Hex address
 
 // Generate Mnemonic for Admin2
 const admin2 = new MnemonicAccount(context);
-console.log(`Admin2:\n ${admin1}`); // backup this
+console.log(`Admin2:`); // backup this
 const str2 = JSON.stringify(admin2, null, 4); // (Optional) beautiful indented output.
 console.log(str2); // Logs output to dev tools console.
 
-console.log(`Admin2 Mnemonic: ${admin2.mnemonic}`); // backup this
-console.log(`Admin2 Native Address: ${admin2.address()}`); // Native address
-console.log(`Admin2 Hex Address: ${admin2.hex_address()}`); // Hex address

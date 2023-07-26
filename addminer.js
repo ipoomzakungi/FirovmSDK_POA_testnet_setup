@@ -86,7 +86,7 @@ async function runScript() {
     txId: "0x" + utxo.txid,
     // add more properties here if needed...
   }));
-  console.log("transformedUtxos " + transformedUtxos);
+  // console.log("transformedUtxos " + transformedUtxos);
 
   // Propose miner
   console.log("Creating proposal ...");
@@ -98,7 +98,7 @@ async function runScript() {
 
   // Retrieve transaction receipt
   let receipt = await rpcClient.getTransactionReceipt(response);
-  console.log("getTransactionReceipt " + JSON.stringify(receipt));
+  // console.log("getTransactionReceipt " + JSON.stringify(receipt));
   // console.log("result_data " + JSON.stringify(receipt.result[0].log[0].data));
   let proposalId = JSON.stringify(receipt.result[0].log[0].data);
   if (!proposalId) {
@@ -120,7 +120,7 @@ async function runScript() {
 
   // Retrieve transaction receipt
   let voteReceipt = await rpcClient.getTransactionReceipt(voteResponse);
-  console.log("getTransactionReceipt " + JSON.stringify(voteReceipt));
+  // console.log("getTransactionReceipt " + JSON.stringify(voteReceipt));
 
   if (voteReceipt.error !== null) {
     console.error("Transaction Error:", voteReceipt.error);
